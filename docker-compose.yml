@@ -1,0 +1,39 @@
+services:
+  backend_1:
+    build: .   
+    environment:
+      - PORT=3001
+    networks:
+      - loadbalancing
+    ports:
+      - "3001:3001"
+
+  backend_2:
+    build: .   
+    environment:
+      - PORT=3002
+    networks:
+      - loadbalancing
+    ports:
+      - "3002:3002"
+
+  backend_3:
+    build: .  
+    environment:
+      - PORT=3003
+    networks:
+      - loadbalancing
+    ports:
+      - "3003:3003"
+
+  backend_4:
+    build: . 
+    environment:
+      - PORT=3004
+    networks:
+      - loadbalancing
+    ports:
+      - "3004:3004"
+
+networks:
+  loadbalancing:

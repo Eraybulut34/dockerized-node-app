@@ -12,7 +12,7 @@ RUN npm install
 COPY . .
 # Copy the source code of the application to the working directory
 
-EXPOSE 3000
+EXPOSE 3001
 # Expose port 3000 of the container
 
 # Run the application
