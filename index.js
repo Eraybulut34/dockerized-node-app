@@ -5,9 +5,10 @@ const INSTANCE = process.env.INSTANCE || 'default';
 
 app.get('/', (req, res) => {
   res.send(`App ${INSTANCE} running on port ${PORT}`);
+  
 });
 
 app.listen(PORT, () => {
-  
+
   console.log(`App ${INSTANCE} running on port ${PORT}`);
 });
